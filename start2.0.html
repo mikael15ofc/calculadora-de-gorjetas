@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="start2.0.css">
+  <title>Calculadora de Gorjeta</title>
+</head>
+<body>
+  <form class="for" id="for">
+    <div class="conteiner">
+      <div class="resultado">
+        <div class="corporesult">
+          <h1>resultado</h1>
+          <div class="result" id="result">
+            Gorjeta Total:<br/>
+              R$ <span id="tips"></span>
+              <span id="each">cada</span>
+          </div>
+        </div>
+      </div>
+      <div class="calculo">
+        <div class="corpo">
+          <h1>cauculadora de gorjetas</h1>
+          <div class="conta" id="quantoficouaconta">
+            <label for="contas">quanto ficou a conta?</label>
+            <input type="number" placeholder="ex: 100 R$" name="cash" id="conta" class="cash" required>
+          </div>
+          <div class="service">
+            <label for="serviço">como foi o seu serviço?</label>
+              <div class="opções">
+                <select name="select" id="forservice" class="serviceselect" required >
+                  <option value="o" disabled selected>escolha uma opção</option>
+                  <option value="0.3">30% - incrivel</option>
+                  <option value="0.2">20% - bom</option>
+                  <option value="0.15">15% - aceitavel</option>
+                  <option value="0.1">10% - ruim</option>
+                  <option value="0.05">05% - pessimo</option>
+                </select>
+              </div>
+          </div>
+          <div class="peoples">
+            <label for="pessoas">quantas pessoas dividiram a conta?</label>
+            <input type="number" placeholder="ex: 1" name="people" id="quntaspessoas" class="inputpeople" required> 
+          </div>
+          <div class="botao">
+            <button type="submit" class="botton">caucular</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+<script type="text/javascript" src="start2.0.js"></script>
+</body>
+</html>
